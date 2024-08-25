@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dulinagi cleaning site</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+  <header class="top-banner" id="top-banner">
+ 
+    <div clas="navbar-container">
+      <nav class="navbar-left" id="navbar-left">
+        <div class="logo-container">
+          <img class="logo-image" src="/images/logo.jpeg" alt="logo" class="logo" />
+        </div>
+        <ul>
+          <li data-modal="about-us-modal">About us</li>
+          <li data-modal="our-cleaning-services-modal">Our cleaning services</li>
+          <li data-modal="FAQ-modal">FAQ</li>
+          <li data-modal="contact-us-modal">Contact us</li>
+        </ul>
+        <div class="nav-right-info">
+          <h2>Call for a free estimate</h2>
+          <p class="phone-number">1-857-615-7853</p>
+        </div>
+        <button class="contact-us" id="contact-us">Contact us</button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="modal" id="about-us-modal">
+    <div class="modal-content">
+      <span class="close" id="modal-close">&times;</span>
+      <h2>About us</h2>
+      <p>
+        Dulinagi Cleaning Services is a family-owned and operated cleaning company based in Boston, Massachusetts. 
+        We have been providing professional cleaning services to residential and commercial clients in the Boston area. 
+        Our team of skilled cleaners is dedicated to delivering high-quality cleaning services that meet the unique needs of each client. 
+        Whether you need a one-time deep clean or regular maintenance, we have the skills and experience to get the job done right. 
+        Contact us today to schedule your cleaning service and enjoy a clean and sanitized space.
+      </p>
+    </div>
+  </div>
+
+  <div class="modal" id="our-cleaning-services-modal">
+    <div class="modal-content">
+      <span class="close" id="modal-close">&times;</span>
+      <h2>Our cleaning services</h2>
+      <p>
+        Dulinagi Cleaning Services offers a variety of cleaning services to clients in the Boston area. 
+        We offer residential, commercial, move-in/move-out, post-construction, and special event cleaning services. 
+        Our team of skilled cleaners provide high-quality cleaning services that meet the unique needs of each client. 
+        Whether you need a one-time deep clean or regular maintenance, we have the skills and experience to get the job done right. 
+        Contact us today to schedule your cleaning service and enjoy a clean and sanitized space.
+      </p>
+    </div>
+  </div>
+
+  <div class="modal" id="FAQ-modal">
+    <div class="modal-content">
+      <span class="close" id="modal-close">&times;</span>
+      <h2>FAQ</h2>
+      <p>
+        Q: What cleaning services do you offer?<br>
+        A: We offer residential, commercial, move-in/move-out, post-construction, and special event cleaning services.<br>
+        <br>
+        Q: How do I schedule a cleaning service?<br>
+        A: You can schedule a cleaning service by contacting us at 1-857-615-7853 or filling out our online contact form.<br>
+        <br>
+        Q: Do you provide cleaning supplies?<br>
+        A: Yes, we provide all cleaning supplies and equipment needed to complete the job.<br>
+        <br>
+        Q: What areas do you serve?<br>
+        A: We serve Middlesex, Suffolk, Norfolk, and other surrounding counties in the Boston area.<br>
+      </p>
+    </div>
+  </div>
+
+  <div class="modal" id="contact-us-modal">
+    <div class="modal-content">
+      <span class="close" id="modal-close">&times;</span>
+      <h2>Contact us</h2>
+      <p>
+        To schedule a cleaning service or request a free estimate, please contact us at 1-857-615-7853 or fill out our online contact form. 
+        Our team of skilled cleaners is dedicated to delivering high-quality cleaning services that meet the unique needs of each client. 
+      </p>
+      <button class="contact-us" id="contact-us">Contact us</button>
+    </div>
+  </div>
+
+  <body>
+    
+    <section class="image-slider" id="image-slider">
+      <video id="background-video" class="background-video" autoplay muted loop>
+        <source src="/dulinagi site vids/Video 1.mp4" type="video/mp4" />
+        Your Browser does not support the video tag.
+      </video>
+      <video id="background-video" class="background-video" autoplay muted loop>
+        <source src="/dulinagi site vids/Video 2.mp4" type="video/mp4" />
+        Your Browser does not support the video tag.
+      </video>
+      <video id="background-video" class="background-video" autoplay muted loop>
+        <source src="/dulinagi site vids/Video 3.mp4" type="video/mp4" />
+        Your Browser does not support the video tag.
+      </video>
+      <div class="statement-content">
+        <h1>Enjoy your <strong>cleaned</strong> space</h1>
+        <h3>Professional cleaning services</h3>
+        <button>Call Us</button>
+      </div>
+    </section>
+
+    <section class="services-section">
+      <div class="cleaning-product-container">
+        <div class="top-text"></div>
+        <div class="cleaning-product-images">
+          <img src="/images/photo 1.jpg" alt="Image 1">
+          <img src="/images/photo 2.jpg" alt="Image 2">
+          <div class="middle-square"></div>
+          <img src="/images/photo 3.jpg" alt="Image 3">
+          <img src="images/photo 4.jpg" alt="Image 4">
+        </div>
+      </div>
+      <div class = "cleaning-product-text">
+        <h2>Keeping your location clean with a detailed rotation system</h2>
+        <p>
+          We use a systematic process to deep clean each room in your home on a rotating basis. 
+          This approach ensures that your entire house remains consistently clean and sanitized, from the everyday areas to those hard-to-reach crevices.
+        </p>
+    </section>
+
+    <section class="offered-services">
+      <div class="employee-image">
+        <img src="/images/employee photo.jpg" alt="employee-image" class="employee" />
+      </div>
+      <div class="text-section-container">
+        <div class="employee-services">
+          <h2>Offering a variety of cleaning services in the Boston area</h2>
+        </div>
+        <div class="location-heading">
+          <h4>Skilled cleaners serving Middlesex, Suffolk, Norfolk & more</h4>
+        </div>
+        <div class="paragraph-text">
+          <p>
+            Our team of skilled cleaners is proud to offer a variety of cleaning services to clients in the Boston area. 
+            We serve Middlesex, Suffolk, Norfolk, and other surrounding counties. 
+            Whether you need a one-time deep clean or regular maintenance, we have the skills and experience to get the job done right.
+          </p>
+        </div>
+        <div class="services-list">
+          <h3>Our cleaning services include:</h3>
+          <ul>
+            <li>Residential cleaning</li>
+            <li>Commercial cleaning</li>
+            <li>Move-in/move-out cleaning</li>
+            <li>Post-construction cleaning</li>
+            <li>Special event cleaning</li>
+          </ul>
+        </div>
+        <div class="bottom-banner">
+          <p>Call us today to schedule your cleaning service</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-form">
+      <div class="contact-form-container">
+        <h2>Contact us for a free estimate</h2>
+        <form action="/submit-form" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" required />
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-logo">
+        <img src="/images/logo.jpeg" alt="logo" class="logo" />
+      </div>
+      <div class="footer-contact">
+        <h3>Call for a free estimate</h3>
+        <p>1-857-615-7853</p>
+      </div>
+      <div class="footer-links">
+        <a href="geo:0,0?q=155+New+Boston+St,+Woburn,+MA+01801">
+          155 New Boston St, Woburn, MA 01801
+        </a>        
+      </div>
+      <div class="social-media">
+        <a href="https://www.instagram.com/dulinagi_axe_inc/" target="_blank">
+          <i class="fa-brands fa-instagram" style="font-size: 30px;"></i>
+        </a>
+      </div>
+
+    
+
+
+      <script src="/static/js/script.js"></script>
+  </body>
+</html>

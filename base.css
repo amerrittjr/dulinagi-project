@@ -1,0 +1,13 @@
+:root {
+  --base-blue: #00b1f1;
+  --base-white: #f8f8f8;
+  --base-green: #01a959;
+  --base-text: #878785;
+  --font-family: "Inter", sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--base-white);
+  padding: 1rem 2rem;
+}
