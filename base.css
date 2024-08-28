@@ -10,4 +10,11 @@ body {
   font-family: var(--font-family);
   background-color: var(--base-white);
   padding: 1rem 2rem;
+  display: grid;
+}
+
+header,
+main,
+footer {
+  padding: 1rem;
 }
