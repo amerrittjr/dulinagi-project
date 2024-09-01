@@ -432,7 +432,7 @@
 
 /* responsive design */
 
-@media (max-width: 450px) {
+@media (max-width: 375px) {
   header,
   body,
   footer,
