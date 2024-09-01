@@ -454,6 +454,28 @@
 
   /*dont forget navbar*/
 
+  .modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 300px;
+    margin-right: 40px;
+  }
+
+  .modal-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .modal-content img {
+    position: relative;
+    left: 40px;
+  }
+
   .logo-container {
     position: relative;
     right: 90px;
