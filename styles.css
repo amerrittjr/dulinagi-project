@@ -454,8 +454,17 @@
 
   /*dont forget navbar*/
 
-  .modal {
+  .hamburger-icon {
     display: flex;
+    font-size: 30px;
+    position: relative;
+    bottom: 47px;
+    left: 280px;
+    cursor: pointer;
+  }
+
+  .modal {
+    display: none;
     flex-direction: column;
     justify-content: center;
     max-width: 300px;
