@@ -1,6 +1,5 @@
-// video player
-
 document.addEventListener("DOMContentLoaded", function () {
+  // Video player logic
   const videos = document.querySelectorAll(".background-video");
   let currentVideoIndex = 0;
 
@@ -11,16 +10,12 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   videos[currentVideoIndex].classList.add("active");
-
   setInterval(showNextVideo, 10000);
-});
 
-//modal
-
-document.addEventListener("DOMContentLoaded", () => {
+  // Modal logic
   const hamburgerIcon = document.querySelector(".hamburger-icon");
   const navbarList = document.querySelector(".navbar-left ul");
-  const modal = document.querySelectorAll(".modal");
+  const modals = document.querySelectorAll(".modal");
   const closeButtons = document.querySelectorAll(".close");
 
   // Toggle the menu visibility
@@ -44,30 +39,34 @@ document.addEventListener("DOMContentLoaded", () => {
       button.closest(".modal").classList.remove("visible");
     });
   });
-});
 
-function closeAllModals() {
-  document.querySelectorAll(".modal.visible").forEach((modal) => {
-    modal.classList.remove("visible");
-  });
-}
-
-document.querySelectorAll("[data-modal]").forEach((item) => {
-  item.addEventListener("click", function () {
-    closeAllModals();
-    const modalId = this.getAttribute("data-modal");
-    document.getElementById(modalId).classList.add("visible");
-  });
-});
-
-document.querySelectorAll(".close").forEach((closeBtn) => {
-  closeBtn.addEventListener("click", function () {
-    this.closest(".modal").classList.remove("visible");
-  });
-});
-
-window.addEventListener("click", function (event) {
-  if (event.target.classList.contains("modal")) {
-    event.target.classList.remove("visible");
+  // Close all modals
+  function closeAllModals() {
+    document.querySelectorAll(".modal.visible").forEach((modal) => {
+      modal.classList.remove("visible");
+    });
   }
+
+  // Add event listeners to modal triggers
+  document.querySelectorAll("[data-modal]").forEach((item) => {
+    item.addEventListener("click", function () {
+      closeAllModals();
+      const modalId = this.getAttribute("data-modal");
+      document.getElementById(modalId).classList.add("visible");
+    });
+  });
+
+  // Add event listeners to close buttons
+  document.querySelectorAll(".close").forEach((closeBtn) => {
+    closeBtn.addEventListener("click", function () {
+      this.closest(".modal").classList.remove("visible");
+    });
+  });
+
+  // Close modal when clicking outside of it
+  window.addEventListener("click", function (event) {
+    if (event.target.classList.contains("modal")) {
+      event.target.classList.remove("visible");
+    }
+  });
 });
