@@ -1,0 +1,418 @@
+/* Base styles */
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.modal img {
+  max-width: 200px;
+  height: 200px;
+}
+
+/* Header styles */
+.top-banner {
+  background-color: white;
+  color: grey;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.hamburger-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.navbar-left ul {
+  display: flex;
+  gap: 20px;
+  margin-left: 20px;
+}
+
+.navbar-left ul li {
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+.navbar-left ul li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-right-info {
+  display: flex;
+  gap: 20px;
+  margin-left: 300px;
+  justify-content: end;
+  align-items: center;
+  text-align: right;
+}
+
+.nav-right-info h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.nav-right-info .phone-number {
+  font-size: 16px;
+  color: #ffd700;
+}
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1001;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.visible {
+  display: flex;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 90%;
+  position: relative;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+.modal-content .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Section styles */
+.image-slider {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.statement-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.statement-content h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.statement-content h3 {
+  font-size: 24px;
+  margin: 10px 0 0;
+}
+
+.services-section {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.cleaning-product-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.cleaning-product-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.image-container {
+  position: relative;
+  flex: 1 1 calc(25% - 20px); /* Adjust the width of each image container */
+  max-width: calc(25% - 20px); /* Ensure the max-width matches the flex-basis */
+  overflow: hidden;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.image-container:hover img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.cleaning-product-text {
+  margin-top: 40px;
+}
+
+.cleaning-product-text h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.cleaning-product-text p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.offered-services {
+  padding: 60px 20px;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+.employee-image img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+}
+
+.text-section-container {
+  margin-top: 20px;
+}
+
+.text-section-container h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.text-section-container h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.text-section-container p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.services-list h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.services-list ul {
+  text-align: left;
+  display: inline-block;
+}
+
+.services-list li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.bottom-banner {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #4caf50;
+}
+
+.contact-form iframe {
+  width: 100%;
+  height: 1650px;
+  border: none;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-logo img {
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.footer-contact h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.footer-contact p {
+  font-size: 16px;
+  color: #ffd700;
+}
+
+.footer-links a {
+  color: #ffd700;
+  font-size: 16px;
+}
+
+.social-media a {
+  color: white;
+  margin: 0 10px;
+  font-size: 24px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar-left ul {
+    display: none;
+    flex-direction: column;
+    background-color: #4caf50;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+  }
+
+  .navbar-left ul.active {
+    display: flex;
+  }
+
+  .hamburger-icon {
+    display: block;
+  }
+
+  .statement-content h1 {
+    font-size: 32px;
+  }
+
+  .statement-content h3 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .image-container {
+    flex: 1 1 calc(33.33% - 20px); /* Three images per row */
+    max-width: calc(33.33% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .image-container {
+    flex: 1 1 calc(50% - 20px); /* Two images per row */
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .image-container {
+    flex: 1 1 100%; /* One image per row */
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-left ul {
+    display: none;
+    flex-direction: column;
+    background-color: #4caf50;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+  }
+
+  .navbar-left ul.active {
+    display: flex;
+  }
+
+  .hamburger-icon {
+    display: block;
+  }
+
+  .nav-right-info {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-left: 60px;
+  }
+
+  .nav-right-info h2 {
+    font-size: 16px;
+  }
+}
