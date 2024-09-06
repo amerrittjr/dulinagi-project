@@ -270,12 +270,15 @@
 /*contact form*/
 
 .contact-form {
-  background-color: var(--base-white);
-  padding: 40px;
-  border-radius: 8px;
-  max-width: 500px;
-  margin: 0 auto;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.contact-form iframe {
+  position: relative;
+  right: 60px;
+  bottom: 45px;
+  width: 700px;
+  height: 1800px;
 }
 
 .contact-form-container h2 {
@@ -613,5 +616,16 @@
 
   .contact-us button {
     display: none;
+  }
+
+  .contact-form {
+    max-width: 350px;
+  }
+
+  .contact-form iframe {
+    max-width: 340px;
+    position: relative;
+    left: 10px;
+    height: 1700px;
   }
 }
